@@ -32,4 +32,5 @@ router.post('/', async(req: Request, res: Response) => {
         handleError(error, res)
     }
 })
+
 module.exports = router;
