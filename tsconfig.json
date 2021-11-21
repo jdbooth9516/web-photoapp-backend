@@ -14,6 +14,6 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*", "config/**/*"],
+  "include": ["src/**/*", "config/**/*"," models/**/*", "routes/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
