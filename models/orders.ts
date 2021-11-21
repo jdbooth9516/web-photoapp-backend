@@ -2,16 +2,18 @@ import mongoose, {Schema} from 'mongoose';
 
 export interface IOrder {
     custName: string,
-    photoName: string,
-    productType: string,
-    cost: number,
+    custEmail: string,
+    phoneNumber: string,
+    products: Array<object>,
+    cost: number
 
 }
 
 const OrderSchema = new Schema<IOrder>({
     custName: { type: String, required: true},
-    photoName: { type: String, required: true},
-    productType: { type: String, required: true},
+    custEmail: { type: String, required: true},
+    phoneNumber: {type: String, required: true},
+    products: { type: [], required: true},
     cost: { type: Number, required: true},
 })
 
